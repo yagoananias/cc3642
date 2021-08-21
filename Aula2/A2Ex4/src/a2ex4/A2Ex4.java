@@ -30,8 +30,17 @@ public class A2Ex4 {
         System.out.println("Retângulo 2 Lado 2");
         ret2.getLado2();
         
-        ret2.setLado1(entrada.nextInt());
-        ret2.setLado2(entrada.nextInt());
+        System.out.println("Area Retangulo 1: ");
+        ret1.area();
+        
+        System.out.println("Area Retangulo 2: ");
+        ret2.area();
+        
+        System.out.println("Perimetro Retangulo 1: ");
+        ret1.perimetro();
+        
+        System.out.println("Perimetro Retangulo 1: ");
+        ret2.perimetro();
     }
     
 }
