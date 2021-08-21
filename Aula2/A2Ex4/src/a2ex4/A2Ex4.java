@@ -39,7 +39,7 @@ public class A2Ex4 {
         System.out.println("Perimetro Retangulo 1: ");
         ret1.perimetro();
         
-        System.out.println("Perimetro Retangulo 1: ");
+        System.out.println("Perimetro Retangulo 2: ");
         ret2.perimetro();
     }
     
