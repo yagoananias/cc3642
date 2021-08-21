@@ -31,6 +31,17 @@ public class A2Ex6 {
         System.out.println("Salário anual Funcionário 2: ");
         System.out.println(func2.salarioAnual());
         
+        System.out.println("Aumento de 10% do Funcionario 1: ");
+        func1.setSalario(2500*0.10);
+        
+        System.out.println("Aumento de 10% do Funcionario 2: ");
+        func2.setSalario(2500*0.10);
+        
+        System.out.println("Salário anual Funcionário 1: ");
+        System.out.println(func1.salarioAnual());
+        System.out.println("Salário anual Funcionário 2: ");
+        System.out.println(func2.salarioAnual());
+        
     }
     
 }
