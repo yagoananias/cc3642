@@ -19,9 +19,9 @@ public class A2Ex5 {
         System.out.println("Digite o tamanho: ");
         tv1.setTamanho(entrada.nextDouble());
         System.out.println("Digite o volume: ");
-        tv1.setVolume(Integer.parseInt(entrada.nextLine()));
+        tv1.setVolume(entrada.nextInt());
         System.out.println("Digite o canal: ");
-        tv1.setCanal(Integer.parseInt(entrada.nextLine()));
+        tv1.setCanal(entrada.nextInt());
         
         System.out.println("------Crie sua TV2------ ");
         System.out.println("Digite o modelo: ");
@@ -31,9 +31,9 @@ public class A2Ex5 {
         System.out.println("Digite o tamanho: ");
         tv2.setTamanho(entrada.nextDouble());
         System.out.println("Digite o volume: ");
-        tv2.setVolume(Integer.parseInt(entrada.nextLine()));
+        tv2.setVolume(entrada.nextInt());
         System.out.println("Digite o canal: ");
-        tv2.setCanal(Integer.parseInt(entrada.nextLine()));
+        tv2.setCanal(entrada.nextInt());
         
         System.out.println("Alterando Volume e Canal da TV1: ");
         tv1.alteraVolume(5);
@@ -51,6 +51,9 @@ public class A2Ex5 {
         JOptionPane.showMessageDialog(null, tv2);
         
         tv2.setLigada(false);
+        
+        
+        
     }
     
 }

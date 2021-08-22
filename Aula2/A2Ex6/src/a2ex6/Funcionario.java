@@ -32,8 +32,7 @@ public class Funcionario {
         this.salario = salario;
     }
     
-    public double salarioAnual() {
-        double salarioAnual = this.salario * 12;
-        return salarioAnual;
+    public double salarioAnual(double salario) {
+        return salario * 12;
     }
 }

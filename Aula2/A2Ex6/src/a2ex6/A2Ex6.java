@@ -16,7 +16,7 @@ public class A2Ex6 {
         System.out.println("Digite o sobrenome: ");
         func1.setSobreNome(entrada.nextLine());
         System.out.println("Digite o salário: ");
-        func1.setSalario(entrada.nextDouble());
+        func1.setSalario(Integer.parseInt(entrada.nextLine()));
         
         System.out.println("Digite as informações do Funcionário 2: ");
         System.out.println("Digite o nome: ");
@@ -24,23 +24,38 @@ public class A2Ex6 {
         System.out.println("Digite o sobrenome: ");
         func2.setSobreNome(entrada.nextLine());
         System.out.println("Digite o salário: ");
-        func2.setSalario(entrada.nextDouble());
+        func2.setSalario(Integer.parseInt(entrada.nextLine()));
         
         System.out.println("Salário anual Funcionário 1: ");
-        System.out.println(func1.salarioAnual());
+        System.out.println(func1.salarioAnual(func1.getSalario()));
         System.out.println("Salário anual Funcionário 2: ");
-        System.out.println(func2.salarioAnual());
+        System.out.println(func2.salarioAnual(func2.getSalario()));
         
-        System.out.println("Aumento de 10% do Funcionario 1: ");
-        func1.setSalario(2500*0.10);
+        System.out.println("Aumentando 10% do salário do Funcionario 1: ");
+        func1.setSalario(func1.getSalario()*1.10);
+        System.out.println(func1.getSalario());
         
-        System.out.println("Aumento de 10% do Funcionario 2: ");
-        func2.setSalario(2500*0.10);
+        System.out.println("Aumentando 10% do salário do Funcionario 2: ");
+        func2.setSalario(func2.getSalario()*1.10);
+        System.out.println(func2.getSalario());
         
+        System.out.println("Nome Funcionario 1");
+        System.out.println(func1.getNome());
+        System.out.println("Sobrenome Funcionario 1 ");
+        System.out.println(func1.getSobreNome());
+        System.out.println("Salario Funcionario 1 ");
+        System.out.println(func1.getSalario());
         System.out.println("Salário anual Funcionário 1: ");
-        System.out.println(func1.salarioAnual());
+        System.out.println(func1.salarioAnual(func1.getSalario()));
+        
+        System.out.println("Nome Funcionario 2");
+        System.out.println(func2.getNome());
+        System.out.println("Sobrenome Funcionario 2 ");
+        System.out.println(func2.getSobreNome());
+        System.out.println("Salario Funcionario 2 ");
+        System.out.println(func2.getSalario());
         System.out.println("Salário anual Funcionário 2: ");
-        System.out.println(func2.salarioAnual());
+        System.out.println(func2.salarioAnual(func2.getSalario()));
         
     }
     

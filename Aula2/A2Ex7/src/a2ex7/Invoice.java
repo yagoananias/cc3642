@@ -28,6 +28,9 @@ public class Invoice {
     }
 
     public void setQtd(int qtd) {
+        if(qtd < 0) {
+            this.qtd = 0;
+        }
         this.qtd = qtd;
     }
 

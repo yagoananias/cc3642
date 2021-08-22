@@ -27,6 +27,7 @@ public class A2Ex7 {
         System.out.println(fatura.getQtd());
         System.out.println("Valor total: ");        
         System.out.println("R$" + fatura.getInvoiceAmount());
+        System.out.println("-----------------");
         
         
     }

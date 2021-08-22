@@ -58,11 +58,10 @@ public class Televisao {
     @Override
     public String toString() {
         return "Televisao{" + "modelo=" + modelo + ", preco=" + preco + ", tamanho=" + tamanho + ", volume=" + volume + ", canal=" + canal + ", ligada=" + ligada + '}';
-    }
-    
+    }    
     
     void alteraVolume( int vol ) {
-        this.volume = this.volume + vol;
+        this.volume = vol;
     }
     
     void alteraCanal( boolean aumentar) {
