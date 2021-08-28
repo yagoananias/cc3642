@@ -86,6 +86,11 @@ public class HeartRates {
     
 
     }
+
+    @Override
+    public String toString() {
+        return "HeartRates{" + "nome=" + nome + ", sobreNome=" + sobreNome + ", diaNasc=" + diaNasc + ", mesNasc=" + mesNasc + ", anoNasc=" + anoNasc + ", idade=" + idade + '}';
+    }
     
     public double freqCardiacaMax(int idade) {
         double max = 0.0;
