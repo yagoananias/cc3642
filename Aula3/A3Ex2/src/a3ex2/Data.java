@@ -53,7 +53,7 @@ public class Data {
         
     }
     
-    public void converteMesTexto() {
+    private void converteMesTexto() {
         if(m == 1)
             mes = "Janeiro";
         else if(m == 2)
