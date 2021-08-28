@@ -13,6 +13,47 @@ public class Data {
         this.m = m;
         this.a = a;
         
+        converteMesTexto();
+        
+        c.set(Calendar.DATE,d);
+        c.set(Calendar.YEAR, a);
+        c.set(Calendar.MONTH, m-1);
+        dda = c.get(Calendar.DAY_OF_YEAR);
+    }
+
+    public Data(String mes, int d, int a) {
+        this.d = d;
+        this.a = a;
+        this.mes = mes;
+        
+        if(mes.equalsIgnoreCase("Janeiro"))
+            m = 1;
+        else if(mes.equalsIgnoreCase("Fevereiro"))
+            m = 2;
+        else if(mes.equalsIgnoreCase("Agosto"))
+            m = 8;
+        else
+            m = 12;
+        
+        c.set(Calendar.DATE,d);
+        c.set(Calendar.YEAR, a);
+        c.set(Calendar.MONTH, m-1);
+        dda = c.get(Calendar.DAY_OF_YEAR);
+    }
+
+    public Data(int dda, int a) {
+        this.a = a;
+        this.dda = dda;
+        
+        c.set(Calendar.DAY_OF_YEAR, dda);
+        m = c.get(Calendar.MONTH) + 1;
+        d = c.get(Calendar.DATE);
+        
+        converteMesTexto();
+        
+    }
+    
+    public void converteMesTexto() {
         if(m == 1)
             mes = "Janeiro";
         else if(m == 2)
@@ -37,22 +78,6 @@ public class Data {
             mes = "Novembro";
         else
             mes = "Dezembro";
-        
-        c.set(Calendar.DATE,d);
-        c.set(Calendar.YEAR, a);
-        c.set(Calendar.MONTH, m-1);
-        dda = c.get(Calendar.DAY_OF_YEAR);
-    }
-
-    public Data(String mes, int d, int a) {
-        this.d = d;
-        this.a = a;
-        this.mes = mes;
-    }
-
-    public Data(int dda, int a) {
-        this.a = a;
-        this.dda = dda;
     }
     
 
@@ -98,7 +123,7 @@ public class Data {
 
     @Override
     public String toString() {
-        return "Data\n" + d + "/" + m + "/" + a + "/" + "\n" + mes + " " + d + ", " + a + "\n" + dda + " " + a;
+        return "Data\n" + d + "/" + m + "/" + a + "\n" + mes + " " + d + ", " + a + "\n" + dda + " " + a;
     }
     
     
