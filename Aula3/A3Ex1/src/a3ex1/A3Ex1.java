@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a3ex1;
 
-/**
- *
- * @author Yago
- */
 public class A3Ex1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Funcionario f1 = new Funcionario();
+        Funcionario f2 = new Funcionario("Steve", "Jobs", 1200, "Male", 56, 1);
+        Funcionario f3 = new Funcionario("Alan", "Turing", 1500, "Male", 41, 2);
+        
+        System.out.println(f1);
+        System.out.println(f2);
+        System.out.println(f3);
+        
     }
     
 }
