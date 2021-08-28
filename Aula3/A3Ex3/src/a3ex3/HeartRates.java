@@ -69,6 +69,21 @@ public class HeartRates {
     return idade;
 
     //System.out.printf("Idade da pessoa em anos: %d\n", idade);
+    
+    /*Utilizando a classe Calendar
+    Calendar data = Calendar.getInstance();
+    idade = data.get(Calendar.YEAR) - ano;
+    if((data.get(Calendar.MONTH) + 1) < mes)
+        idade--;
+    else {
+        if((data.get(Calendar.MONTH) + 1) == mes) {
+            if(data.get(Calendar.DATE) < dia)
+                idade--;
+        }
+        return idade;
+    }
+    */
+    
 
     }
     
@@ -78,9 +93,12 @@ public class HeartRates {
         return max;
     }
     
-    public double freqCardiacaMin() {
-        double min = 0.0;
-        return min;
+    public double freqAlvoMin() {
+        return 0.5 * freqCardiacaMax(idade);
+    }
+    
+    public double freqAlvoMax() {
+        return 0.85 * freqCardiacaMax(idade);
     }
     
     
