@@ -1,14 +1,62 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a3ex4;
 
-/**
- *
- * @author Yago
- */
 public class Racional {
+
+    private int numerador;
+    private int denominador;
+
+    public Racional() {
+        numerador = 1;
+        denominador = 1;
+    }
+
+    public Racional(int numerador, int denominador) {
+        this.numerador = numerador;
+        this.denominador = denominador;
+        reducao();
+    }
+
+    private void reducao() {
+        int mdc = 0;
+        int menor = Math.min(numerador, denominador);
+
+        for (int divisor = menor; divisor >= 2; divisor--) {
+            if (numerador % divisor == 0 && denominador % divisor == 0) {
+                mdc = divisor;
+                break;
+            }
+        }
+
+        if (mdc != 0) {
+            numerador = numerador / mdc;
+            denominador = denominador / mdc;
+        }
+    }
     
+
+    public int somaRacional(int num, int deno) {
+        int resultado = 0;
+        resultado = num + deno;
+        return resultado;
+    }
+
+    public int subRacional(int num, int deno) {
+        int resultado = 0;
+        resultado = num - deno;
+        return resultado;
+    }
+
+    public Racional multiRacional(Racional x) {
+        int n = numerador * x.numerador;
+        int d = denominador * x.denominador;
+        Racional resultado = new Racional(n, d);
+        return resultado;
+    }
+
+    public int divRacional(int num, int deno) {
+        int resultado = 0;
+        resultado = num / deno;
+        return resultado;
+    }
+
 }
