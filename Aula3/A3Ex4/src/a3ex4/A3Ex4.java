@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a3ex4;
 
-/**
- *
- * @author Yago
- */
 public class A3Ex4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Racional r1 = new Racional(30, 36);
+        //Racional r2 = new Racional(2, 3);
+        Racional r4 = new Racional(5, 10);
+        System.out.println(r1);
+        //System.out.println(r2);
+        System.out.println(r4);        
+        
+        //Racional r3 = r1.multiRacional(r2);
+        Racional r4 = r1.somaRacional(r1);
+        
+        System.out.println(r4);
+        
     }
     
 }

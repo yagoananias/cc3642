@@ -34,9 +34,11 @@ public class Racional {
     }
     
 
-    public int somaRacional(int num, int deno) {
-        int resultado = 0;
-        resultado = num + deno;
+    public Racional somaRacional(Racional x) {
+        int n = numerador + x.numerador;
+        int d = denominador + x.denominador;
+        
+        Racional resultado = new Racional(n, d);
         return resultado;
     }
 
@@ -49,7 +51,8 @@ public class Racional {
     public Racional multiRacional(Racional x) {
         int n = numerador * x.numerador;
         int d = denominador * x.denominador;
-        Racional resultado = new Racional(n, d);
+        
+        Racional resultado = new Racional(n, d);        
         return resultado;
     }
 
@@ -58,5 +61,28 @@ public class Racional {
         resultado = num / deno;
         return resultado;
     }
+
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
+    }
+
+    public void setDenominador(int denominador) {
+        this.denominador = denominador;
+    }
+
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador ;
+    }
+    
+    
 
 }
