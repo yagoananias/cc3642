@@ -50,7 +50,8 @@ public class Laser {
 
     @Override
     public String toString() {
-        return "Laser{" + "fabricante=" + fabricante + ", alcance=" + alcance + ", precisao=" + precisao + ", medida=" + medida + '}';
+        return "Laser{" + "fabricante=" + fabricante + ", alcance="
+                + alcance + ", precisao=" + precisao + ", medida=" + medida + '}';
     }
     
     

@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a4ex2;
 
-/**
- *
- * @author Yago
- */
+import java.util.ArrayList;
+
 public class A4Ex2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ArrayList<String> cor1 = new ArrayList<>();
+        ArrayList<String> cor2 = new ArrayList<>();
+        
+        cor1.add("Red");
+        cor1.add("Blue");
+        cor1.add("Yellow");
+        
+        cor2.add("Yellow");
+        cor2.add("Green");
+        cor2.add("Red");
+        
+        System.out.println(cor1.containsAll(cor2));
     }
     
 }
