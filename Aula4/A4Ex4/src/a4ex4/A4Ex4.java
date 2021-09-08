@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a4ex4;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -11,11 +8,28 @@ package a4ex4;
  */
 public class A4Ex4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ArrayList<Peca> tabuleiro = new ArrayList<>();
+        
+        for(char letra = 'a'; letra <= 'h'; letra++)
+            tabuleiro.add(new Peca("peão", "preto", (letra+"7")));
+        
+        for(char letra = 'a'; letra <= 'h'; letra++)
+            tabuleiro.add(new Peca("peão", "branco", (letra+"2")));
+        
+        tabuleiro.add(new Peca("torre", "preto", "a8"));
+        tabuleiro.add(new Peca("torre", "preto", "h8"));
+        
+        for(int i = 0; i < tabuleiro.size(); i++) {
+            if("f7".equals(tabuleiro.get(i).getPosicao())) {
+                tabuleiro.remove(i);
+                System.out.println("Peça Removida!");
+            }
+        }
+        
+        for( Peca peca : tabuleiro)
+            System.out.println(peca);
     }
     
 }
