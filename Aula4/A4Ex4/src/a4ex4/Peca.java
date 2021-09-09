@@ -34,6 +34,9 @@ public class Peca {
         this.posicao = posicao;
     }
 
+    /**
+     * Construtor da peça
+     */
     public Peca(String tipo, String cor, String posicao) {
         this.tipo = tipo;
         this.cor = cor;
