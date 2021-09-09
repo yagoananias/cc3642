@@ -1,7 +1,7 @@
 package a4ex5;
 
 /**
- *
+ * Classe modelo de uma Conta Corrente
  * @author Yago
  */
 public class ContaCorrente {
