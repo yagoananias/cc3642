@@ -32,7 +32,8 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return "Aluno{" + "curso=" + curso + '}';
+        return "Aluno{" + " curso=" + curso + " nome=" +
+                nome + " sobrenome=" + sobreNome + " idade=" + idade + '}';
     }
     
     
