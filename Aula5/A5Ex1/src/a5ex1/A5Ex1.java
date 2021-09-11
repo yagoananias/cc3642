@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package a5ex1;
+
+import a5ex1.subclasse.Aluno;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -15,7 +14,19 @@ public class A5Ex1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ArrayList<Aluno> turma = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        
+        turma.add(new Aluno(input.nextLine(), input.nextLine(),
+                input.nextLine(), input.nextInt()));
+        
+        turma.add(new Aluno());
+        
+        for(Aluno a : turma)
+            System.out.println(a);
+        
+        
     }
     
 }
