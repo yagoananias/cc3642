@@ -34,6 +34,12 @@ public class Cambio {
     public String toString() {
         return "Cambio{" + "tipoCambio=" + tipoCambio + ", marchas=" + marchas + '}';
     }
+
+    public Cambio(String tipoCambio, int marchas) {
+        this.tipoCambio = tipoCambio;
+        this.marchas = marchas;
+    }
+    
     
     
     

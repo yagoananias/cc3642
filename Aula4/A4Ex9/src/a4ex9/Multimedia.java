@@ -34,6 +34,11 @@ public class Multimedia {
     public String toString() {
         return "Multimedia{" + "marca=" + marca + ", bluetooth=" + bluetooth + '}';
     }
+
+    public Multimedia(String marca, boolean bluetooth) {
+        this.marca = marca;
+        this.bluetooth = bluetooth;
+    }
     
     
     

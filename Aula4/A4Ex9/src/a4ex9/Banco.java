@@ -34,6 +34,13 @@ public class Banco {
     public String toString() {
         return "Banco{" + "bancosFrente=" + bancosFrente + ", bancosTras=" + bancosTras + '}';
     }
+
+    public Banco(int bancosFrente, int bancosTras) {
+        this.bancosFrente = bancosFrente;
+        this.bancosTras = bancosTras;
+    }
+    
+    
     
     
     

@@ -29,7 +29,13 @@ public class Airbag {
     public String toString() {
         return "Airbag{" + "airbagFrente=" + airbagFrente + ", airbagLateral=" + airbagLateral + '}';
     }
+
+    public Airbag(int airbagFrente, int airbagLateral) {
+        this.airbagFrente = airbagFrente;
+        this.airbagLateral = airbagLateral;
+    }
     
+        
     
     
 }

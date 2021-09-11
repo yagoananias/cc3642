@@ -34,6 +34,11 @@ public class Direcao {
     public String toString() {
         return "Direcao{" + "tipo=" + tipo + ", fabricante=" + fabricante + '}';
     }
+
+    public Direcao(String tipo, String fabricante) {
+        this.tipo = tipo;
+        this.fabricante = fabricante;
+    }
     
     
     

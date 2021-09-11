@@ -34,6 +34,11 @@ public class Porta {
     public String toString() {
         return "Porta{" + "portas=" + portas + ", portaMala=" + portaMala + '}';
     }
+
+    public Porta(int portas, boolean portaMala) {
+        this.portas = portas;
+        this.portaMala = portaMala;
+    }
     
     
     

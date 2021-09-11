@@ -34,6 +34,11 @@ public class Camera {
     public String toString() {
         return "Camera{" + "cameraRe=" + cameraRe + ", cameraCentral=" + cameraCentral + '}';
     }
+
+    public Camera(boolean cameraRe, boolean cameraCentral) {
+        this.cameraRe = cameraRe;
+        this.cameraCentral = cameraCentral;
+    }
     
     
     

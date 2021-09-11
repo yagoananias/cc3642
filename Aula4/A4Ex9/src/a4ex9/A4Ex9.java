@@ -8,19 +8,13 @@ import java.util.ArrayList;
  */
 public class A4Ex9 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         ArrayList<Carro> carros = new ArrayList<>();
         
-        carros.add(new Carro(airbag, banco));
+        carros.add(new Carro());
         
-        for(Carro c : carros) {
-            System.out.println(c.getAirbag());
-            System.out.println(c.getBanco());
-            System.out.println();
-        }
+        for(Carro c : carros)
+            System.out.println(c);
     }
     
 }

@@ -34,6 +34,12 @@ public class Roda {
     public String toString() {
         return "Roda{" + "rodas=" + rodas + ", ligaLeve=" + ligaLeve + '}';
     }
+
+    public Roda(int rodas, boolean ligaLeve) {
+        this.rodas = rodas;
+        this.ligaLeve = ligaLeve;
+    }
+    
     
     
     

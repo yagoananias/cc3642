@@ -34,6 +34,12 @@ public class Volante {
     public String toString() {
         return "Volante{" + "tipo=" + tipo + ", multiMedia=" + multiMedia + '}';
     }
+
+    public Volante(String tipo, boolean multiMedia) {
+        this.tipo = tipo;
+        this.multiMedia = multiMedia;
+    }
+    
     
     
     

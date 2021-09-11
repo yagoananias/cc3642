@@ -34,6 +34,12 @@ public class Motor {
     public String toString() {
         return "Motor{" + "cilindros=" + cilindros + ", litros=" + litros + '}';
     }
+
+    public Motor(int cilindros, int litros) {
+        this.cilindros = cilindros;
+        this.litros = litros;
+    }
+    
     
     
     
