@@ -59,7 +59,7 @@ public class Main {
       employee2.setBaseSalary( 30000 ); // configura o salario-base                                    
       
       System.out.printf( "\n%s:\n\n%s\n", 
-         "Updated employee information obtained by toString",
+         "Updated employee2 information obtained by toString",
          employee2.toString());
     }
     
