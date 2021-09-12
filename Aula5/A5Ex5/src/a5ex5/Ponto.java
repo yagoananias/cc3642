@@ -1,7 +1,8 @@
 package a5ex5;
 
 /**
- *
+ * Classe que compõe Quadrilatero
+ * @see Quadrilatero
  * @author Yago
  */
 public class Ponto {

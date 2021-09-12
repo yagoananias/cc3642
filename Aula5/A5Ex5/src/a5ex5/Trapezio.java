@@ -1,7 +1,8 @@
 package a5ex5;
 
 /**
- *
+ * Subclasse de Quadrilatero
+ * @see Quadrilatero
  * @author Yago
  */
 public class Trapezio extends Quadrilatero {

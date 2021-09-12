@@ -1,7 +1,8 @@
 package a5ex5;
 
 /**
- *
+ * Subclasse de Paralelogramo
+ * @see Paralelogramo
  * @author Yago
  */
 public class Retangulo extends Paralelogramo {

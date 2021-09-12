@@ -1,7 +1,8 @@
 package a5ex5;
 
 /**
- *
+ * Subclasse de Trapezio
+ * @see Trapezio
  * @author Yago
  */
 public class Paralelogramo extends Trapezio {

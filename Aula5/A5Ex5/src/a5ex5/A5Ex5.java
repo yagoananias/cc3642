@@ -20,7 +20,7 @@ public class A5Ex5 {
                 = new Retangulo(17.0, 14.0, 30.0, 14.0, 30.0, 28.0, 17.0, 28.0);
 
         Quadrado quad
-                = new Quadrado(4.0, 0.0, 8.0, 0.0, 8.0, 4.0, 4.0, 4.0);
+                = new Quadrado(4.0, 0.0, 10.0, 0.0, 10.0, 5.0, 5.0, 5.0);
 
         System.out.printf(
                 "%s %s %s %s %s\n", quadri, trap, para, ret, quad);

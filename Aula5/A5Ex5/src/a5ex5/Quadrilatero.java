@@ -3,7 +3,7 @@ package a5ex5;
 import a5ex5.Ponto;
 
 /**
- *
+ * Superclasse Quadrilatero
  * @author Yago
  */
 public class Quadrilatero {
