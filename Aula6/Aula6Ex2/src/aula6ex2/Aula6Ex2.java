@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula6ex1;
+package aula6ex2;
 
 /**
  *
  * @author Yago
  */
-public class Quadrado {
-    public static int square(int x) {
-        return x*x;
-    }
-    
-    public static double square(double x) {
-        return x*x;
+public class Aula6Ex2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
     
 }

@@ -15,9 +15,9 @@ public class Aula6Ex1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Quadrado q = new Quadrado();
-        System.out.println(q.square(5));
-        System.out.println(q.square(2.5));
+
+        System.out.println(Quadrado.square(5));
+        System.out.println(Quadrado.square(2.5));
     }
     
 }
