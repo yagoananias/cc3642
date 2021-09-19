@@ -17,6 +17,7 @@ public class Aula6Ex4 {
         Moveable circle = new MoveableCircle(ponto, 3);
         circle.moveRight();
         circle.moveDown();
+        System.out.println(circle);
     }
     
 }
