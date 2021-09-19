@@ -15,7 +15,14 @@ public class Aula6Ex2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Formas f;
+        f = new Retangulo(5.0, 2.2);
+        f.print();
+        f.perimetro();
+        
+        f = new Circulo(5);
+        f.print();
+        f.perimetro();
     }
     
 }
