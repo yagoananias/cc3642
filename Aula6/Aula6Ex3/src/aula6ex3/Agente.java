@@ -9,6 +9,13 @@ package aula6ex3;
  *
  * @author Yago
  */
-public class Agente {
+public abstract class Agente {
+    
+    private String nome;
+    private boolean modo_agente;
+    private String profissao;
+    private String empresas;
+    
+    void apresentacao(){};
     
 }
