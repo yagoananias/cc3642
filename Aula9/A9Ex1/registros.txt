@@ -1,0 +1,2 @@
+Debito: 1000 valor: 20.0Deposito: 2000 valor: 50.0
+Transf de : 3000 para: 1000 valor: 60.0
