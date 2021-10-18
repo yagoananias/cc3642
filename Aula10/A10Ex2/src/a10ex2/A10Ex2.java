@@ -5,6 +5,8 @@
  */
 package a10ex2;
 
+import view.Janela;
+
 /**
  *
  * @author Yago
@@ -15,7 +17,8 @@ public class A10Ex2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Janela j = new Janela();
+        j.setVisible(true);
     }
     
 }
