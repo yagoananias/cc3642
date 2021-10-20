@@ -52,6 +52,11 @@ public class Janela extends javax.swing.JFrame {
         });
 
         botaoSoma.setText("Soma");
+        botaoSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoSomaActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("N1");
 
@@ -77,11 +82,11 @@ public class Janela extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2))
-                        .addGap(64, 64, 64)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(entradaN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(resultado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(entradaN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(entradaN1, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                            .addComponent(entradaN2)
+                            .addComponent(resultado)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(botaoSoma)
                         .addGap(46, 46, 46)
@@ -120,6 +125,10 @@ public class Janela extends javax.swing.JFrame {
     private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
         control.limpar();
     }//GEN-LAST:event_botaoLimparActionPerformed
+
+    private void botaoSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSomaActionPerformed
+        control.soma();
+    }//GEN-LAST:event_botaoSomaActionPerformed
 
     public Controller getControl() {
         return control;

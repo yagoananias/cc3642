@@ -20,9 +20,10 @@ public class Controller {
     
     public void soma() {
         double n1, n2;
+        
         try {   
-        n1 = (Double.parseDouble(janela.getEntradaN1().getText()));
-        n2 = (Double.parseDouble(janela.getEntradaN2().getText()));
+            n1 = (Double.parseDouble(janela.getEntradaN1().getText()));
+            n2 = (Double.parseDouble(janela.getEntradaN2().getText()));
         }
         catch (Exception e) {
             System.out.println(e);
