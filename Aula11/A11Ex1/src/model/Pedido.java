@@ -16,7 +16,7 @@ public class Pedido {
     public Pedido(Cliente cliente, ArrayList<Pizza> pizzas) {
         this.cliente = cliente;
         this.pizzas = new ArrayList<>(pizzas);
-        numero = numero++;
+        numero = numero + 1;
         this.numeroPedido = numero; 
     }
 
@@ -51,5 +51,12 @@ public class Pedido {
     public void setPizzas(ArrayList<Pizza> pizzas) {
         this.pizzas = pizzas;
     }
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "cliente=" + cliente + ", numeroPedido=" +
+                numeroPedido + ", pizzas=" + pizzas + '}';
+    }
+    
     
 }

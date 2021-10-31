@@ -9,6 +9,27 @@ package model;
  *
  * @author Yago
  */
-public class FrangoCatupiry {
+public class FrangoCatupiry extends PizzaFrango{
+
+    public FrangoCatupiry(String tamanho) {
+        super(tamanho);
+        getIngredientes().add("Catupiry");
+    }
+
+    @Override
+    public void montarPizza() {
+        setNome("Frango com Catupiry");
+        switch(getTamanho()) {
+            case "P":
+                setPreco(20.5);
+                break;
+            case "M":
+                setPreco(27.8);
+                break;
+            case "G":
+                setPreco(35.2);
+                break;
+        }
+    }
     
 }

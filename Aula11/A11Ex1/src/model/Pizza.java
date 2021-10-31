@@ -52,6 +52,14 @@ public abstract class Pizza {
     public void setNome(String nome) {
         this.nome = nome;
     }    
+
+    @Override
+    public String toString() {
+        return "Pizza{" + "tamanho=" + tamanho + ", preco=" + preco +
+                ", ingredientes=" + ingredientes + ", nome=" + nome + '}';
+    }
+    
+    
     
     
 }

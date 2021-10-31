@@ -39,6 +39,14 @@ public class Cliente {
         this.endereco = endereco;
         this.telefone = telefone;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nome=" + nome + ", endereco=" + endereco +
+                ", telefone=" + telefone + '}';
+    }
+    
+    
     
     
     
